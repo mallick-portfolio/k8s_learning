@@ -9,5 +9,5 @@ spec:
     - name: trafic-container
       image: tamal008/traffic_gen:1.0.3
       args:
-        - "10.244.0.82:3000"
+        - "express-svc:5000"
         - "1"
