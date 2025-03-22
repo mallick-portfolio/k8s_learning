@@ -10,7 +10,7 @@ INTERVAL=$2
 
 while true; do
     TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
-    RESPONSE= curl -s "$TARGET"
+    RESPONSE= $(curl -s "$TARGET")
     echo "[$TIMESTAMP] $RESPONSE"
     sleep "$INTERVAL"
 done
