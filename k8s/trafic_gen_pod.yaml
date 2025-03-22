@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: trafic-container
-      image: tamal008/traffic_gen:1.0.3
+      image: tamal008/traffic_gen:1.0.4
       args:
-        - "express-svc:5000"
+        - "express-svc:3000"
         - "1"

@@ -3,8 +3,9 @@ kind: Service
 metadata:
   name: express-svc
 spec:
+  type: ClusterIP
   selector:
     app: express-app
   ports:
     - port: 3000
-      targetPort: 5000
+      targetPort: 3000
